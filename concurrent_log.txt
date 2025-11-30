@@ -1,0 +1,14 @@
+Creating bucket: cs6620-s3-consistency-concurrent-20251124-202826-374ccc in us-west-2
+
+[TEST 2.1] Data Plane Concurrent (Thundering Herd)
+   Launch: 100 parallel threads...
+Results: {'count': 100, 'success_rate': 100.0, 'mean_ms': np.float64(302.38), 'median_ms': np.float64(297.89), 'p95_ms': np.float64(394.64), 'p99_ms': np.float64(414.45), 'max_ms': np.float64(417.74)}
+
+[TEST 2.2] Control Plane Racer
+   Running Control Plane Racer (100 iterations)...
+Results: {'n': 100, 'success_rate_%': 100.0, 'mean_s': 1.85, 'median_s': 0.97, 'p95_s': 5.57, 'p99_s': 11.56, 'max_s': 11.83}
+
+CSV written: data_plane_concurrent_results.csv, control_plane_racer_results.csv
+
+Cleaning up …
+Done.

@@ -1,0 +1,14 @@
+Creating bucket: cs6620-s3-consistency-20251114-042600-9ab418 in us-west-2
+
+[TEST 1.1] Data Plane Strong Consistency
+Results: {'count': 100, 'success_rate': 100.0, 'mean_ms': np.float64(99.26), 'median_ms': np.float64(98.98), 'p95_ms': np.float64(109.64), 'p99_ms': np.float64(225.72), 'max_ms': np.float64(228.38)}
+
+[TEST 1.2] Control Plane Propagation (Lifecycle)
+Results: {'n': 100, 'success_rate_600s_%': 100.0, 'success_rate_180s_%': 100.0, 'success_rate_300s_%': 100.0, 'instant_visibility_%': 98.0, 'stale_first_read_%': 2.0, 'mean_s': 0.07, 'median_s': 0.05, 'p95_s': 0.11, 'p99_s': 1.09, 'max_s': 1.09}
+
+CSV written: data_plane_results.csv, control_plane_results.csv
+
+Cleaning up …
+Done.
+
+Nov13
