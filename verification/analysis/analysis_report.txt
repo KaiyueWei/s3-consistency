@@ -1,0 +1,32 @@
+
+============================================================
+DATA PLANE ANALYSIS (Object Consistency)
+============================================================
+
+[Sequential Test] (N=100)
+  Success Rate: 100.00%
+  Latency (ms): Mean=99.26, Median=98.98, P99=225.72
+
+[Concurrent Test] (N=100)
+  Success Rate: 100.00%
+  Latency Breakdown (ms):
+    Write: Mean=239.41, P99=364.41
+    Read:  Mean=62.97, P99=143.39
+    Total: Mean=302.38, P99=414.45
+
+============================================================
+CONTROL PLANE ANALYSIS (Eventual Consistency)
+============================================================
+
+[Sequential Test] (N=100)
+  Success Rate: 100.00%
+  Propagation (s): Mean=0.07, Median=0.05, Max=1.09
+  Instant Visibility (<1s): 98.0%
+
+[Concurrent 'Racer' Test] (N=100)
+  Success Rate: 100.00%
+  Propagation (s): Mean=1.85, Median=0.97, Max=11.83
+  Instant Visibility (<1s): 52.0%
+  Tail Latency Events (>5s): 8 events
+  Worst Case: 11.83s
+  API Calls: Mean=2.76, Max=6, Total=276
